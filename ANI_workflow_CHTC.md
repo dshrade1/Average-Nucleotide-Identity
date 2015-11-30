@@ -1,4 +1,5 @@
-Workflow for performing ANI calculations in high-throughput on CHTC.  
+#Workflow for performing ANI calculations in high-throughput on CHTC.  
+This is a workflow for performing a large number of ANI comparisons using CHTC (not Zissou or your local machine).
 
 **1. Obtain sequences for comparison**  
 Sarah Stevens (sstevens2@wisc.edu) has a back door into getting either genome scaffolds or protein-coding genes from JGI.  
