@@ -1,5 +1,6 @@
 #!/usr/bin/python
-#python ANI_batch.py '/home/dgshrader/ANIcalculator_v1/test_data2/*.fna' 10
+# python ANI_batch.py '/home/dgshrader/ANIcalculator_v1/ANI_data/*.fna' 12
+# cp ANI_batch.py /home/dgshrader/ANIcalculator_v1/ANI_batch.py
 
 
 import sys, os, glob
@@ -25,8 +26,8 @@ print path2fna
 def call_ANIcalc(params):
 	ref1, ref2 = params #these are the 2 fna files to compare #had to do it this way for the map function to work; needs a LIST to work on (2nd arg of p.map)
 	outfile = os.path.splitext(os.path.basename(ref1))[0] + 'v' + os.path.splitext(os.path.basename(ref2))[0] + '.txt'
-	logfile = os.path.splitext(os.path.basename(ref1))[0] + 'v' + os.path.splitext(os.path.basename(ref2))[0] + 'log.txt'
-	cmd='./ANIcalculator -genome1fna ' + ref1 + ' -genome2fna ' + ref2 + ' -outfile ' + outfile + ' -logfile ' + logfile
+	#logfile = os.path.splitext(os.path.basename(ref1))[0] + 'v' + os.path.splitext(os.path.basename(ref2))[0] + 'log.txt'
+	cmd='./ANIcalculator -genome1fna ' + ref1 + ' -genome2fna ' + ref2 + ' -outfile ' + outfile# + ' -logfile ' + logfile
 	print cmd
 	os.system(cmd)
 	

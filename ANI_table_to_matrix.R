@@ -15,6 +15,7 @@ ani2 <- ani[,c(2,1,4)] # ANI, 2->1 order
 names(ani2) <- names(ani1)
 ani1 <- rbind(ani1,ani2) 
 ani1 <- ani1[-which(duplicated(ani1[,1:2])==T),] #remove duplicates
+ani1[,3] <- as.numeric(levels(ani[,3]))[ani[,3]]
 
 #create weighted ADJACENCY matrix
 ani_graph <- graph.data.frame(ani1)
