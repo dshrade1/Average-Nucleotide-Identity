@@ -52,7 +52,7 @@ transfer_input_files = /home/dgshrader/ANIcalculator,/home/dgshrader/nsimscan,/h
 initialdir = ANIoutput_151124  
 # Tell HTCondor what amount of compute resources  
 request_cpus = 1  
-request_memory = 1.2GB  
+request_memory = 2GB  
 request_disk = 6GB  
 # possible flocking line, +WantFlocking = true  
 # Tell HTCondor to run 1 instances of our job:  
