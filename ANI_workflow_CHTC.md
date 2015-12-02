@@ -128,7 +128,7 @@ cat * > merged-file.txt
 ```
 This creates the file merged-file.txt within the folder whose files were merged.  
 
-**12. Read the file into R and transfer to a matrix using the following script.**  
-https://github.com/dshrade1/freshwater/blob/master/ANI_table_to_matrix.sh  
+**12. Read the file into R and transfer to a matrix.**  
+Use the following script: https://github.com/dshrade1/freshwater/blob/master/ANI_table_to_matrix.sh  
 This will produce a heat map with tree of ANI relatedness of all your genomes.  
 Note, if you want to use a list of names to label your matrix (i.e., if you want to relate the rows on your matrix to the names of the organisms) you can use https://github.com/dshrade1/freshwater/blob/master/ANI_table_to_matrix_NAMES.R  
