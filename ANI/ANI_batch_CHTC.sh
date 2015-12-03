@@ -1,4 +1,4 @@
-# ./ANI_batch_CHTC.sh /home/dgshrader/ANIcalculator_v1/ANI_data
+# ./ANI_batch_CHTC.sh
 
 #!/bin/bash
 #
